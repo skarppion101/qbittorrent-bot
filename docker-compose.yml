@@ -2,9 +2,10 @@ version: "3.2"
 
 services:
   qbittelebot:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+#    build:
+#      context: .
+#      dockerfile: ./Dockerfile
+    image: skarppion101/qbittelegrambot
     container_name: qbittelegrambot
     volumes:
       - ./config.toml:/app/config.toml
